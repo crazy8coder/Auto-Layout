@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="height" constant="128" id="lW0-vk-ISF"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbC-e5-pt4">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbC-e5-pt4" userLabel="Yellow Box">
                                 <rect key="frame" x="20" y="452" width="128" height="128"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -33,7 +33,7 @@
                                     <constraint firstAttribute="width" constant="128" id="sLJ-tb-Oya"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8D-Yh-DtJ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8D-Yh-DtJ" userLabel="Red Box">
                                 <rect key="frame" x="439" y="452" width="128" height="128"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -44,9 +44,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYB-Pw-Y4Y">
-                                <rect key="frame" x="120" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="39" y="285" width="211" height="30"/>
+                                <state key="normal" title="Sarthak is a Super Duper BOss"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HAHAHAAHA" translatesAutoresizingMaskIntoConstraints="NO" id="cmZ-2R-amr" userLabel="Pic">
+                                <rect key="frame" x="24" y="316" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -57,15 +60,21 @@
                             <constraint firstItem="Rw8-8i-Dfs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Bdw-R0-Xs1"/>
                             <constraint firstItem="gbC-e5-pt4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Gg7-S9-b6N"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gbC-e5-pt4" secondAttribute="trailing" constant="432" id="Gq7-5o-1hT"/>
+                            <constraint firstItem="gbC-e5-pt4" firstAttribute="leading" secondItem="cmZ-2R-amr" secondAttribute="leading" id="IOX-SC-Qlv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gbC-e5-pt4" secondAttribute="bottom" constant="20" id="YNZ-LH-KFC"/>
+                            <constraint firstItem="Rw8-8i-Dfs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="k02-Nt-8lB"/>
                             <constraint firstItem="Rw8-8i-Dfs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mbR-qa-EKM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B8D-Yh-DtJ" secondAttribute="trailing" constant="13" id="rvG-wW-6AE"/>
+                            <constraint firstItem="gbC-e5-pt4" firstAttribute="top" secondItem="cmZ-2R-amr" secondAttribute="bottom" constant="8" id="vo8-aQ-Yer"/>
                         </constraints>
                     </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="309" y="270"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="HAHAHAAHA" width="338" height="98"/>
+    </resources>
 </document>
